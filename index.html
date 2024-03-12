@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/customs css/style.css">
+    <script src="https://kit.fontawesome.com/3e7f8f034d.js" crossorigin="anonymous"></script>
+    <script src="Assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Assets/js/script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="Assets/images/fevicon.png" type="image/x-icon">
+    <title>Dabang_Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- side navbar -->
+        <div class="row d-flex flex-nowrap">
+
+            <div class="d-flex bg-light flex-column justify-content-between col-auto min-vh-100 sidebar">
+                <div class="mt-4 px-0">
+                    <div class="px-2">
+                        <a href="" class="text-dark text-decoration-none align-items-center flex-row d-flex">
+                            <img src="Assets/images/dabang logo.png" class="" height="45rem" width="auto" alt="">
+                            <span class="px-3">
+                                <h3>Dabang</h3>
+                            </span>
+                        </a>
+                    </div>
+                    <hr class="text-white">
+                    <ul class="nav nav-pills flex-column mt-4" id="menu">
+                        <li class="nav-item my-2" style="background-color: #5D5FEF;">
+                            <a href=""
+                                class="nav-link text-white d-flex justify-content-start align-items-center" data-tooltip="Dashboard">
+                                <i class='fa'>&#xf200;</i>
+                                <span class="ms-2">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a href=""
+                                class="nav-link text-dark d-flex justify-content-start align-items-center" data-tooltip="Leaderboard">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                <span class="ms-2">Leaderboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a href=""
+                                class="nav-link text-dark d-flex justify-content-start align-items-center" data-tooltip="Order">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="ms-2">Order</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a href=""
+                                class="nav-link text-dark d-flex justify-content-start align-items-center" data-tooltip="Product">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span class="ms-2">Product</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a href=""
+                                class="nav-link text-dark d-flex justify-content-start align-items-center" data-tooltip="Sales Report">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span class="ms-2">Sales Report</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a href=""
+                                class="nav-link text-dark d-flex justify-content-start align-items-center" data-tooltip="Messages">
+                                <i class="fa-regular fa-message"></i>
+                                <span class="ms-2">Messages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a href=""
+                                class="nav-link text-dark d-flex justify-content-start align-items-center" data-tooltip="Settings">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="ms-2">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item my-2">
+                            <a href=""
+                                class="nav-link text-dark d-flex justify-content-start align-items-center" data-tooltip="Sign Out">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <span class="ms-2">Sign Out</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="card text-center mt-5 d-none d-md-flex ms-1" style="width: 12rem; background-color: #5D5FEF; color: white;">
+                        <div class="card-body">
+                            <img src="Assets/images/dabang pro Logo.png" class="img-fluid" alt="dabang_pro">
+                            <h5 class="card-title">Dabang Pro</h5>
+                            <p class="card-text" style="font-size: small;">Get access to all features on tetumbus.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: white; color: #5D5FEF;">Get Pro</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- sidepart -->
+            <div class="sidepart col px-0">
+
+                <!-- sidepart nav bar -->
+                <!-- <div class="flex-column"> -->
+                    <nav class="navbar navbar-light bg-light d-flex flex-nowrap">
+                        <div class="container-fluid px-3">
+                            <button onclick="collepsedMenu()" style="border: none; background-color: transparent;">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <form class="d-flex">
+                                <div class="d-flex rounded-3 nav-search" style="background-color: rgb(235, 232, 232);">
+                                    <span class="input-group-text border-0" id="basic-addon1" style="background-color: transparent; color: #5D5FEF;">
+                                        <i class="fa-solid fa-magnifying-glass" ></i>
+                                    </span>
+                                    <input class="form-control border-0 ip-search" type="search" placeholder="Search" aria-label="Search" style="background-color: transparent;">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="user-profile me-4 d-flex align-items-center">
+                            <div class="notify pe-4">
+                                <i class="fa-regular fa-bell text-warning"></i>
+                            </div>
+                            <img src="Assets/images/profile.png" alt="" width="20%" height="10%">
+
+                            <div class="btn-group me-3 pe-5">
+                                <button class="btn btn-sm" type="button">
+                                    <div class="p-0 d-flex align-items-center flex-column justify-content-center mt-2 me-2">
+                                        <span style="font-size: medium;">Musfiq</span>
+                                        <p style="font-size: xx-small;">admin</p>
+                                    </div>
+                                </button>
+                                <button type="button" class="btn btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li class="dropdown-divider">
+                                        <hr>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">My Account</a></li>
+                                    <li class="dropdown-divider">
+                                        <hr>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </nav>
+                <!-- </div> -->
+
+                <!-- sidepart contents -->
+                <div class="container-fluid  whole-cards my-2">
+
+                    <div class="row">
+                        <!-- first section card1 -->
+                        <div class="col-lg-6 p-2">
+                            <div class="card px-2" style="height: 100%;">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h5 class="card-title">Today's Sales</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Sales Summary</h6>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                                Export
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5 mb-3">
+                                        <div class="col-xl-3 col-lg-6 col-md-6 px-1 gy-2">
+                                            <div class="card" style="height: 100%;">
+                                                <div class="card-body" style="background-color: #FFE2E5;">
+                                                    <img src="Assets/images/1st.png" alt="">
+                                                    <h3 class="mt-3">$1k</h3>
+                                                    <h5 style="font-size: medium;">Total Sales</h5>
+                                                    <p style="font-size: small; color: blue;">+8% from yesterday</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 px-1 gy-2">
+                                            <div class="card" style="height: 100%;">
+                                                <div class="card-body" style="background-color: #FFF4DE;">
+                                                    <img src="Assets/images/Icon.png" alt="">
+                                                    <h3 class="mt-3">300</h3>
+                                                    <h5 style="font-size: medium;">Total Order</h5>
+                                                    <p style="font-size: small; color: blue;">+5% from yesterday</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 px-1 gy-2">
+                                            <div class="card" style="height: 100%;">
+                                                <div class="card-body" style="background-color: #DCFCE7;">
+                                                    <img src="Assets/images/3rd.png" alt="">
+                                                    <h3 class="mt-3">5</h3>
+                                                    <h5 style="font-size: medium;">Product Sold</h5>
+                                                    <p style="font-size: small; color: blue;">+1,2% from yesterday</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 px-1 gy-2">
+                                            <div class="card" style="height: 100%;">
+                                                <div class="card-body" style="background-color: #F3E8FF;" >
+                                                    <img src="Assets/images/4th.png" alt="">
+                                                    <h3 class="mt-3">8</h3>
+                                                    <h5 style="font-size: medium;">New Customers</h5>
+                                                    <p style="font-size: small; color: blue;">+0,5% from yesterday</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- first section card2 -->
+                        <div class="col-lg-6 p-2">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Visitor Insights</h5>
+                                    <div class="accordion mt-3" id="accordionExample">
+                                        <div class="accordion-item my-2">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne" style="background-color: #5D5FEF; color: white;">
+                                                    Accordion Item #1
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is
+                                                    shown by default, until the collapse plugin adds the appropriate
+                                                    classes that we use to style each element. These classes control the
+                                                    overall appearance, as well as the showing and hiding via CSS
+                                                    transitions. You can modify any of this with custom CSS or
+                                                    overriding our default variables. It's also worth noting that just
+                                                    about any HTML can go within.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo" style="background-color: #5D5FEF; color: white;">
+                                                    Accordion Item #2
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the second item's accordion body.</strong> It is
+                                                    hidden by default, until the collapse plugin adds the appropriate
+                                                    classes that we use to style each element. These classes control the
+                                                    overall appearance, as well as the showing and hiding via CSS
+                                                    transitions. You can modify any of this with custom CSS or
+                                                    overriding our default variables. It's also worth noting that just
+                                                    about any HTML can go within.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Section -->
+                    <div class="row p-0">
+                        <div class="col-lg-6 p-2">
+                            <div class="card" style="overflow-x: auto; height: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Visitor List</h5>
+                                    <table class="table table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Join Date</th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Stephen P. Osborn</td>
+                                                <td>17 Jan, 2023</td>
+                                                <td>
+                                                    <span><i
+                                                            class="fa-regular fa-pen-to-square text-success"></i></span>
+                                                    <span class="text-danger m-2"><i
+                                                            class="fa-solid fa-trash"></i></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>Odessa G. Mettler</td>
+                                                <td>13 Feb, 2023</td>
+                                                <td>
+                                                    <span><i
+                                                            class="fa-regular fa-pen-to-square text-success"></i></span>
+                                                    <span class="text-danger m-2"><i
+                                                            class="fa-solid fa-trash"></i></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>Judith H. Richards</td>
+                                                <td>13 Feb, 2023</td>
+                                                <td>
+                                                    <span><i
+                                                            class="fa-regular fa-pen-to-square text-success"></i></span>
+                                                    <span class="text-danger m-2"><i
+                                                            class="fa-solid fa-trash"></i></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>04</td>
+                                                <td>Jack B. Perry</td>
+                                                <td>10 Feb, 2023</td>
+                                                <td>
+                                                    <span><i
+                                                            class="fa-regular fa-pen-to-square text-success"></i></span>
+                                                    <span class="text-danger m-2"><i
+                                                            class="fa-solid fa-trash"></i></span>
+                                                </td>
+                                            </tr>
+                                            <tr style="border-bottom: transparent;">
+                                                <td>05</td>
+                                                <td>Chris B. Ryant</td>
+                                                <td>10 Feb, 2023</td>
+                                                <td>
+                                                    <span>
+                                                        <i class="fa-regular fa-pen-to-square text-success"></i>
+                                                    </span>
+                                                    <span class="text-danger m-2"><i
+                                                            class="fa-solid fa-trash"></i></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <a href="" class="text-decoration-none mt-2 fs-5">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 p-2">
+                            <div class="card" style="overflow-x: auto; height: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Top Products</h5>
+                                    <div>
+                                        <table class="table second">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Popularity</th>
+                                                <th scope="col">Sales</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>01</td>
+                                                <td>Home Decor Range</td>
+                                                <td>
+                                                    <div class="progress mt-2" style="height:5px; width:70%; background-color: #CDE7FF;">
+                                                        <div class="progress-bar" style="width:60%;background-color: #0095FF;"></div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-primary btnOne">45%</button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>02</td>
+                                                <td>Disney Princess Pink Bag 18'</td>
+                                                <td>
+                                                    <div class="progress mt-2" style="height:5px; width:70%; background-color: #8CFAC7;">
+                                                        <div class="progress-bar" style="width:50%;background-color: #00E096;"></div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-primary btnTwo">29%</button>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>03</td>
+                                                <td>Bathroom Essentials</td>
+                                                <td>
+                                                    <div class="progress mt-2" style="height:5px; width:70%; background-color: #C5A8FF;">
+                                                        <div class="progress-bar" style="width:40%;background-color: #884DFF;"></div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-primary btnThree" >18%</button>
+                                                </td>
+                                              </tr>
+                                              <tr style="border-bottom: transparent;">
+                                                <td>04</td>
+                                                <td>Apple Smartwatches</td>
+                                                <td>
+                                                    <div class="progress mt-2" style="height:5px; width:70%; background-color: #FFD5A4;">
+                                                        <div class="progress-bar" style="width:30%;background-color: #FF8F0D;"></div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-primary btnFour">25%</button>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third Section -->
+                    <div class="row">
+                        <div class="col-lg-6 p-2 ">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Main Products</h5>
+                                    <div class="mt-3">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active acrdb" id="p-1" data-bs-toggle="tab"
+                                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                                    aria-selected="true" style="background-color: #5D5FEF; color: white;" onclick="chngBg('p-1')">Product - 1</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link acrdb" id="p-2" data-bs-toggle="tab"
+                                                    data-bs-target="#profile" type="button" role="tab"
+                                                    aria-controls="profile" aria-selected="false" onclick="chngBg('p-2')">Product - 2</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                                aria-labelledby="home-tab">
+                                                <div class="details1 d-flex justify-content-between mt-2">
+                                                    <div class="igm">
+                                                        <img src="Assets/images/productdetail.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">What is product?</h5>
+                                                            <p class="card-text">There are many variations of passages
+                                                                of
+                                                                Lorem Ipsum available,
+                                                                but the majority have suffered alteration in some form,
+                                                                by
+                                                                injected humour,
+                                                                or randomised words which don't look even slightly
+                                                                believable. If you are going to
+                                                                use a passage of Lorem Ipsum, you need to be sure there
+                                                                isn't anything embarrassing
+                                                                hidden in the middle of text.</p>
+                                                            <button class="btn btn-primary">Read More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="profile" role="tabpanel"
+                                                aria-labelledby="profile-tab">
+                                                <div class="details2 d-flex justify-content-between">
+                                                    <div class="img mt-2">
+                                                        <img src="Assets/images/productdetail.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">What is product?</h5>
+                                                            <p class="card-text">There are many variations of passages
+                                                                of
+                                                                Lorem Ipsum available,
+                                                                but the majority have suffered alteration in some form,
+                                                                by
+                                                                injected humour,
+                                                                or randomised words which don't look even slightly
+                                                                believable. If you are going to
+                                                                use a passage of Lorem Ipsum, you need to be sure there
+                                                                isn't anything embarrassing
+                                                                hidden in the middle of text.</p>
+                                                            <button class="btn btn-primary">Read More</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 p-2">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Sales Mapping by Country</h5>
+                                    <div class="mt-5">
+                                        <img src="Assets/images/map-image.png" class="img-fluid" width="100%" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 p-2">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-body d-flex flex-column align-content-around">
+                                    <h5 class="card-title">Volume vs Service</h5>
+                                    <div class="d-flex justify-content-around mt-5 align-items-end">
+                                        <img src="Assets/images/vertical-bars/1.png" class="img-fluid" height="100%" alt="">
+                                        <img src="Assets/images/vertical-bars/2.png" class="img-fluid" height="100%" alt="">
+                                        <img src="Assets/images/vertical-bars/3.png" class="img-fluid" height="100%" alt="">
+                                        <img src="Assets/images/vertical-bars/4.png" class="img-fluid" height="100%" alt="">
+                                        <img src="Assets/images/vertical-bars/5.png" class="img-fluid" height="100%" alt="">
+                                        <img src="Assets/images/vertical-bars/6.png" class="img-fluid" height="100%" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="Assets/images/vertical-bars/indication.png" class="img-fluid" width="100%" height="auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

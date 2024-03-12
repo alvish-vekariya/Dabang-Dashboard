@@ -1,0 +1,204 @@
+.nav-pills li a:hover{
+    background-color: #5D5FEF;
+    color:white  !important;
+    border-radius: 1rem!important;
+}
+
+
+body{
+    background-color: rgb(235, 232, 232);
+    font-family: 'Poppins', sans-serif;
+}
+
+.collepsed span{
+    display: none !important;
+}
+.collepsed .card{
+    display: none !important;
+}
+
+.collepsed .nav-pills{
+    margin-top: 2.4rem !important;
+}
+
+.sidebar ul li{
+    border-radius: 1rem!important;
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar{
+        display: none !important;
+    }
+
+    .collepsed{
+        display: flex !important;
+    }
+
+    .collepsed span{
+        display: none !important;
+    }
+
+    .collepsed .card{
+        display: none !important;
+    }
+
+    .ip-search{
+        display: none !important;
+    }
+
+    .nav-search{
+        background-color: transparent !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .sidebar span{
+        display: none !important;
+    }
+    .sidebar .card{
+        display: none !important;
+    }
+
+    .sidebar ul{
+        margin-top: 2rem !important;
+    }
+
+    .collepsed span{
+        display: flex !important;
+    }
+
+    .collepsed .card{
+        display: flex !important;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .sidebar span{
+        display: flex !important;
+    }
+
+    .sidebar .card{
+        display: flex !important;
+    }
+    
+    .collepsed span{
+        display: none !important;
+    }
+
+    .collepsed .card{
+        display: none !important;
+    }
+
+    .ip-search{
+        display: flex !important;
+    }
+}
+
+.card{
+    border-radius: 1.5rem;
+}
+
+.card-body{
+    border-radius: 1.5rem;
+}
+
+.btnOne{
+    height: 2rem;
+    font-size: medium;
+    width: 4rem;
+    background-color: #F0F9FF;
+    color: #0095FF;
+    border: 1px solid #0095FF;
+}
+.btnTwo{
+    height: 2rem;
+    font-size: medium;
+    width: 4rem;
+    background-color: #F0FDF4;
+    color: #00E58F;
+    border: 1px solid #00E58F;
+}
+.btnThree{
+    height: 2rem;
+    font-size: medium;
+    width: 4rem;
+    background-color: #FBF1FF;
+    color: #884DFF;
+    border: 1px solid #884DFF;
+}
+.btnFour{
+    height: 2rem;
+    font-size: medium;
+    width: 4rem;
+    background-color: #FEF6E6;
+    color: #FF8900;
+    border: 1px solid #FF8900;
+}
+
+.btnOne:hover{
+    background-color: #0095FF;
+    color: white;
+    border: 1px solid #0095FF;
+}
+
+.btnTwo:hover{
+    background-color: #00E58F;
+    color: white;
+    border: 1px solid #00E58F;
+}
+
+.btnThree:hover{
+    background-color: #884DFF;
+    color: white;
+    border: 1px solid #884DFF;
+}
+
+.btnFour:hover{
+    background-color: #FF8900;
+    color: white;
+    border: 1px solid #FF8900;
+}
+
+.accordion-item{
+    border: 1px solid #5D5FEF;
+}
+
+.second td{
+    padding: 1rem !important;
+}
+
+.accordion-button::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.collepsed ul li a{
+    position: relative;
+}
+
+.collepsed ul li a::after,
+.collepsed ul li a::before{
+    --scale:0;
+    position: absolute;
+    content: '';
+    top: 2.3rem;
+    left: 205%;
+    z-index: 2;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: 50ms transform;
+    transform-origin: left;
+}
+
+.collepsed ul li a::before{
+    content: attr(data-tooltip);
+    color: white;
+    width: max-content;
+    width: 200%;
+    padding: .5rem;
+    border-radius: .3rem;
+    text-align: center;
+    background: #5D5FEF;
+}
+
+.collepsed ul li a:hover:before{
+    --scale: 1;
+}
